@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Azhagar P | Front End Development Lead</title>
+<meta name="description" content="Azhagar P, Front End Development Lead with 10 years of experience building React Native and web applications.">
+<style>
+  :root {
+    --bg: #f7f8fa; --panel: #ffffff; --text: #16202b; --muted: #5b6672; --border: #dfe3e8;
+    --accent: #1f4e79; --accent-soft: #e6eef6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e141b; --panel: #161e27; --text: #e7edf3; --muted: #97a3af; --border: #263240;
+      --accent: #7fb2e5; --accent-soft: #1b2a3a;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color: var(--accent); }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 0 20px; }
+  nav { position: sticky; top: 0; background: var(--bg); border-bottom: 1px solid var(--border); z-index: 1; }
+  nav .wrap { display: flex; gap: 20px; align-items: center; height: 56px; overflow-x: auto; white-space: nowrap; }
+  nav strong { margin-right: auto; }
+  nav a { text-decoration: none; color: var(--muted); font-size: 15px; }
+  nav a:hover { color: var(--accent); }
+  header { padding: 72px 0 48px; }
+  h1 { font-size: clamp(34px, 6vw, 52px); line-height: 1.1; margin: 0 0 12px; letter-spacing: -0.02em; }
+  .role { font-size: 20px; color: var(--accent); font-weight: 600; margin: 0 0 16px; }
+  .lead { font-size: 18px; color: var(--muted); max-width: 640px; margin: 0 0 28px; }
+  .button { display: inline-block; padding: 10px 20px; border-radius: 8px; background: var(--accent); color: var(--bg); text-decoration: none; font-weight: 600; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-top: 40px; }
+  .stat { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 16px; }
+  .stat b { display: block; font-size: 28px; color: var(--accent); line-height: 1.2; }
+  .stat span { color: var(--muted); font-size: 14px; }
+  section { padding: 40px 0; border-top: 1px solid var(--border); }
+  h2 { font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin: 0 0 20px; }
+  h3 { margin: 0 0 4px; font-size: 18px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+  .card { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 20px; }
+  .card p { margin: 6px 0 12px; color: var(--muted); }
+  .card ul { margin: 0; padding-left: 18px; }
+  .card.feature { grid-column: 1 / -1; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+  .tag { background: var(--accent-soft); color: var(--accent); border-radius: 999px; padding: 2px 10px; font-size: 13px; }
+  .meta { color: var(--muted); font-size: 14px; margin: 0; }
+  .skills { display: grid; grid-template-columns: 170px 1fr; gap: 10px 16px; margin: 0; }
+  .skills dt { font-weight: 600; }
+  .skills dd { margin: 0; color: var(--muted); }
+  .job { display: grid; grid-template-columns: 190px 1fr; gap: 4px 20px; padding: 14px 0; }
+  .job + .job { border-top: 1px solid var(--border); }
+  .job p { margin: 4px 0 0; color: var(--muted); }
+  footer { padding: 32px 0 56px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--border); }
+  @media (max-width: 600px) {
+    .skills, .job { grid-template-columns: 1fr; }
+    header { padding-top: 48px; }
+  }
+</style>
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <strong>Azhagar P</strong>
+    <a href="#work">Work</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header class="wrap">
+  <h1>Azhagar P</h1>
+  <p class="role">Front End Development Lead · React Native · Full-Stack JavaScript</p>
+  <p class="lead">I build and lead mobile and web products. Right now that means a React Native point-of-sale app that restaurants rely on every day, including when the internet goes down.</p>
+  <a class="button" href="mailto:azhagar333@gmail.com">Get in touch</a>
+  <div class="stats">
+    <div class="stat"><b>10</b><span>years building apps</span></div>
+    <div class="stat"><b>12</b><span>apps published (10 Play Store, 2 App Store)</span></div>
+    <div class="stat"><b>3+</b><span>years leading a front-end team</span></div>
+  </div>
+</header>
+
+<section id="work">
+  <div class="wrap">
+    <h2>Selected work</h2>
+    <div class="grid">
+      <article class="card feature">
+        <h3>Restaurant merchant point-of-sale app</h3>
+        <p class="meta">Magilhub · Front End Development Lead · 2023 – present</p>
+        <p>A React Native app that restaurants use for orders, billing and payments. I lead its front-end development.</p>
+        <ul>
+          <li><strong>Offline-first:</strong> local storage on WatermelonDB with background sync, so outlets keep trading without a connection.</li>
+          <li><strong>Payments:</strong> Datacap payment processing integrated into the checkout flow.</li>
+          <li><strong>Kitchen printing:</strong> kitchen order tickets routed to the right station printers over MQTT and push notifications.</li>
+          <li><strong>Platform upgrade:</strong> led the move from React Native 0.62 to 0.82.</li>
+        </ul>
+        <div class="tags"><span class="tag">React Native</span><span class="tag">WatermelonDB</span><span class="tag">MQTT</span><span class="tag">Datacap</span></div>
+      </article>
+      <article class="card">
+        <h3>WINI</h3>
+        <p class="meta">Jeev.ai · Senior Programmer · 2022 – 2023</p>
+        <p>An app that assists clinicians and helps reduce clinical errors. I architected and developed it, with a focus on secure user data, external API integration and an accessible interface.</p>
+        <div class="tags"><span class="tag">Healthcare</span><span class="tag">Mobile</span><span class="tag">API integration</span></div>
+      </article>
+      <article class="card">
+        <h3>Mybuddys</h3>
+        <p class="meta">NGB Tech Solutions · App Developer · 2020 – 2022</p>
+        <p>A social networking app built around simplicity. I architected the project, built multimedia content sharing and handled secure storage of user data.</p>
+        <div class="tags"><span class="tag">Social</span><span class="tag">Media sharing</span><span class="tag">Architecture</span></div>
+      </article>
+      <article class="card">
+        <h3>OPR Support, Cricket Alpha, AKFC</h3>
+        <p class="meta">KSM Pixel Solution · App Developer · 2017 – 2020</p>
+        <p>Commercial and entertainment apps where I owned project architecture, external API integration, performance work and testing through to release.</p>
+        <div class="tags"><span class="tag">Android</span><span class="tag">Performance</span><span class="tag">Release</span></div>
+      </article>
+      <article class="card">
+        <h3>What’s Book</h3>
+        <p class="meta">Malar Institute of Technology · App Developer · 2017</p>
+        <p>A real-time text chat app with secure data handling and a simple interface.</p>
+        <div class="tags"><span class="tag">Real-time chat</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <dl class="skills">
+      <dt>Mobile</dt><dd>React Native, Redux (Thunk, Saga), Flutter, Ionic, Cordova, Java (Android)</dd>
+      <dt>Web</dt><dd>React JS, JavaScript, HTML, CSS</dd>
+      <dt>Back end</dt><dd>Node.js REST APIs, MERN stack, PHP REST APIs; working knowledge of Python and Java Spring Boot</dd>
+      <dt>Data and messaging</dt><dd>WatermelonDB, SQLite, MySQL, Firebase, MQTT</dd>
+      <dt>Integrations</dt><dd>Datacap payments, push notifications, kitchen and receipt printers, third-party REST APIs</dd>
+      <dt>Leadership</dt><dd>Mentoring, code reviews, quality standards, delivery planning, production troubleshooting</dd>
+      <dt>Tools</dt><dd>Git, GitHub, Bitbucket, SourceTree, Jira, Android Studio</dd>
+    </dl>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2>Experience</h2>
+    <div class="job"><p class="meta">Mar 2023 – Present</p><div><h3>Front End Development Lead</h3><p>Magilhub India Pvt Ltd, Madurai</p></div></div>
+    <div class="job"><p class="meta">Jul 2022 – Feb 2023</p><div><h3>Senior Programmer</h3><p>Jeev.ai Pvt Ltd, Bengaluru</p></div></div>
+    <div class="job"><p class="meta">Mar 2020 – Jul 2022</p><div><h3>App Developer</h3><p>NGB Tech Solutions, Coimbatore</p></div></div>
+    <div class="job"><p class="meta">Jun 2017 – Feb 2020</p><div><h3>App Developer</h3><p>KSM Pixel Solution, Madurai</p></div></div>
+    <div class="job"><p class="meta">Mar 2017 – Jun 2017</p><div><h3>App Developer</h3><p>Malar Institute of Technology, Tirunelveli</p></div></div>
+    <div class="job"><p class="meta">Jun 2016 – Jan 2017</p><div><h3>Java Program Trainee</h3><p>Skyverse Media Inc, Bengaluru</p></div></div>
+    <div class="job"><p class="meta">2012 – 2016</p><div><h3>B.E. Electrical and Electronics Engineering</h3><p>PET Engineering College, Vallioor, Tirunelveli</p></div></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <p>The quickest way to reach me is email: <a href="mailto:azhagar333@gmail.com">azhagar333@gmail.com</a></p>
+    <p class="meta">Based in Madurai, Tamil Nadu, India.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© 2026 Azhagar P</div>
+</footer>
+</body>
+</html>
